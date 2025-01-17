@@ -1,14 +1,8 @@
-import * as React from 'react';
-import LandingPage from './pages/landing/landing';
-
-
+import * as React from "react";
+import LandingPage from "./pages/landing/landing";
 
 function App() {
-  return (
-    <div className="">
-    <LandingPage />
-    </div>
-  );
+  return <div className=""></div>;
 }
 
 export default App;
