@@ -139,7 +139,7 @@ const About = () => {
               />
             </div>
             <div className="card__content">
-              <h4>Analytics & Reportingg</h4>
+              <h4>Analytics & Reporting</h4>
               <p>Make data-driven decisions with real-time insights.</p>
             </div>
           </div>

@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="name">
-        <img src="assets\images\company.svg" alt="GydgenWaver" />
+        <img src="assets\images\company.svg" alt="GydgenWave" />
       </div>
       <div className="auth">
         <div className="login" onClick={() => navigate("/login")}>
