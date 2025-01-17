@@ -11,7 +11,7 @@ const Main = () => {
       <div className="flex flex-col justify-center items-center text-[4rem] font-[600] text-gray-500 h-screen">
         <Switch {...label} disabled defaultChecked />
         <Button variant="contained" onClick={() => navigate("/login")}>
-          Get started
+          Get start
         </Button>
         <Switch {...label} disabled />
       </div>
