@@ -15,7 +15,7 @@ const NavBar = () => {
         <div className="login" onClick={() => navigate("/login")}>
           Login
         </div>
-        <button onClick={() => navigate("/login")}>Get Started</button>
+        <button onClick={() => navigate("/sign-up")}>Get Started</button>
       </div>
       <div className="menu">
         <IconButton color="inherit" aria-label="menu">

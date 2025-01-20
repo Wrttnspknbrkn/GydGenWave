@@ -1,5 +1,5 @@
-import Login from "./authentication/Login";
+import Register from "./authentication/Register";
 import ErrorPage from "./error/Main";
 import LandingPage from "./landing/Main";
 
-export { ErrorPage, LandingPage, Login };
+export { ErrorPage, LandingPage, Register };

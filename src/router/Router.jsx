@@ -1,5 +1,5 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import { ErrorPage, LandingPage, Login } from "../pages";
+import { ErrorPage, LandingPage, Register } from "../pages";
 
 const Router = [
   {
@@ -14,7 +14,7 @@ const Router = [
     ],
   },
   { path: "/landing", element: <LandingPage /> },
-  { path: "/login", element: <Login /> },
+  { path: "/sign-up", element: <Register /> },
   { path: "*", element: <ErrorPage /> },
 ];
 
