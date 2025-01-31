@@ -11,7 +11,7 @@ const AuthForms = ({ activeTab, setActiveTab }) => {
     <div className="flex justify-center items-center h-full">
       <div className="w-[600px]">
         <img src={logo} alt="logo" className="w-[110px]" />
-        <div className="bg-white p-12 rounded-[14px] mt-8">
+        <div className="bg-white p-6 md:p-12 rounded-[14px] mt-8">
           {activeTab == 0 && (
             <>
               <h3 className="text-[#101928] text-[28px] font-semibold">
