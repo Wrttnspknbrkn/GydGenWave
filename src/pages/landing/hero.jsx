@@ -11,15 +11,14 @@ const Hero = () => {
               <img src="assets\images\fire.png" alt="fire" />
               GydGenWave
             </span>
-            <span>Streamline. Optimize. Grow with GydGen ERP.</span>
+            <span>Streamline. Optimize. Grow with GydGen CRM.</span>
             <img src="assets\images\arrow.png" alt="" />
           </div>
         </div>
-        <h1>Empower Your Business with a Seamless ERP System</h1>
+        <h1>Empower Your Business with an Intelligent CRM Solution</h1>
         <p>
-          Transform your operations with our tailor-made ERP solutions for small
-          businesses in Ghana. Boost efficiency, streamline processes, and
-          increase productivity.
+          Transform the way you manage customer relationships with our CRM tailored for small businesses in Ghana. 
+          Drive growth, build stronger connections, and boost sales efficiency.
         </p>
         <div className="buttons">
           <button className="buttons__blue">Get 30days Free trial</button>
