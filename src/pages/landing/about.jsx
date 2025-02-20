@@ -3,8 +3,13 @@ import { useNavigate } from "react-router-dom";
 
 const About = () => {
   const navigate = useNavigate();
+  
   const handleLearnMore = () => {
     navigate('/about-us');
+  };
+  
+  const handleViewFeatures = () => {
+    navigate('/features');
   };
 
   return (
@@ -22,7 +27,7 @@ const About = () => {
               Centralize all your customer interactions, streamline your workflows, and gain valuable insights to help your business thrive.
             </p>
             <div>
-            <button onClick={handleLearnMore}>Learn More</button>
+              <button onClick={handleLearnMore}>Learn More</button>
             </div>
           </div>
           <div className="gw__image">
@@ -55,7 +60,8 @@ const About = () => {
               <h4>Customer Management</h4>
               <p>
                 Build strong customer relationships with lead tracking, sales
-                pipelines, and automated communication
+                pipelines, and automated communication tools. Store complete customer
+                profiles and interaction history all in one place.
               </p>
             </div>
           </div>
@@ -70,8 +76,9 @@ const About = () => {
             <div className="card__content">
               <h4>Lead Management</h4>
               <p>
-                Track stock levels, manage vendors, and reduce overstocking with
-                ease.
+                Capture, score, and nurture leads through your sales funnel. Prioritize
+                high-value prospects and never let potential customers fall through the cracks
+                with our advanced tracking system.
               </p>
             </div>
           </div>
@@ -88,8 +95,9 @@ const About = () => {
             <div className="card__content">
               <h4>Sales Pipeline Management</h4>
               <p>
-                Keep your financials in check with budgeting, invoicing, and
-                detailed reports.
+                Visualize and optimize your entire sales process from lead to close.
+                Track deal progress, forecast revenue, and identify bottlenecks to
+                improve conversion rates.
               </p>
             </div>
           </div>
@@ -102,8 +110,12 @@ const About = () => {
               />
             </div>
             <div className="card__content">
-              <h4>Marketing Automation </h4>
-              <p>Streamline payroll, employee management, and HR tasks.</p>
+              <h4>Marketing Automation</h4>
+              <p>
+                Schedule campaigns, segment audiences, and track performance metrics.
+                Create personalized marketing messages that resonate with your target
+                customers to drive engagement.
+              </p>
             </div>
           </div>
           <div className="card">
@@ -116,7 +128,11 @@ const About = () => {
             </div>
             <div className="card__content">
               <h4>Task and Workflow Automation</h4>
-              <p>Close deals faster with a seamless purchasing process</p>
+              <p>
+                Streamline repetitive tasks with customizable workflows. Set up triggered
+                actions, automated follow-ups, and task assignments to increase team
+                productivity and close deals faster.
+              </p>
             </div>
           </div>
           <div className="card">
@@ -129,7 +145,11 @@ const About = () => {
             </div>
             <div className="card__content">
               <h4>Customer Support Tools</h4>
-              <p>Plan, track, and deliver successful projects.</p>
+              <p>
+                Manage support tickets, track resolution times, and maintain customer
+                satisfaction. Integrate customer service with sales data for a complete
+                view of your customer relationships.
+              </p>
             </div>
           </div>
           <div className="card">
@@ -142,7 +162,11 @@ const About = () => {
             </div>
             <div className="card__content">
               <h4>Reports and Analytics</h4>
-              <p>Make data-driven decisions with real-time insights.</p>
+              <p>
+                Generate customizable dashboards and reports to track KPIs and identify
+                trends. Leverage data-driven insights to optimize your strategy and make
+                informed business decisions.
+              </p>
             </div>
           </div>
           <div className="card">
@@ -156,12 +180,16 @@ const About = () => {
             <div className="card__content">
               <h4>Integration Capabilities</h4>
               <p>
-                Create, organize, and manage digital content effortlessly,
-                enhancing your online presence.
+                Connect seamlessly with your existing business tools including email,
+                calendars, accounting software, and e-commerce platforms. Create a
+                unified ecosystem for your business operations.
               </p>
             </div>
           </div>
         </div>
+        <button className="view-features-btn" onClick={handleViewFeatures}>
+          View All Features
+        </button>
       </div>
     </div>
   );
