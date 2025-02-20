@@ -61,8 +61,8 @@ const Faq = () => {
 
       {/* FAQ Section */}
       <div className="faqs">
-        <h2>Frequently asked questions</h2>
-        <p>Find answers to common questions about using GydGenWave</p>
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about using GydGenWave CRM</p>
 
         <motion.div 
           className="faqs__content"
@@ -71,29 +71,29 @@ const Faq = () => {
           animate="visible"
         >
           <motion.div variants={itemVariants} className="faqs__item">
-            <h6>What is GydGenWave?</h6>
-            <p>GydGenWave is a cutting-edge ERP system tailored for small businesses in Ghana. It offers an integrated platform to streamline operations, manage workflows, and improve productivity.</p>
+            <h6>What is GydGenWave CRM?</h6>
+            <p>GydGenWave CRM is a powerful customer relationship management system designed to help businesses manage customer interactions, automate workflows, and improve sales and support processes.</p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="faqs__item">
             <h6>How do I get started?</h6>
-            <p>Getting started with GydGenWave is straightforward. Begin by selecting the modules that best suit your business needs—whether it's CRM for managing customer relationships or Inventory Management for tracking stock.</p>
+            <p>Getting started with GydGenWave CRM is easy. Simply sign up, set up your customer database, and begin managing relationships through our intuitive dashboard.</p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="faqs__item">
-            <h6>Is GydGenWave customizable for my business needs?</h6>
-            <p>Yes, GydGenWave is highly customizable to fit your unique requirements. Each module, from CRM to Accounting, can be tailored to match your operational processes and workflows.</p>
+            <h6>Can GydGenWave CRM be customized for my business?</h6>
+            <p>Yes! GydGenWave CRM is highly flexible, allowing you to customize features such as contact management, sales pipelines, and workflow automation to fit your unique business needs.</p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="faqs__item">
-            <h6>Is there customer support?</h6>
-            <p>Absolutely! Our dedicated customer support team is here to help you at every stage. Whether you need assistance with setup, customization, or troubleshooting, you can count on us.</p>
+            <h6>Is customer support available?</h6>
+            <p>Definitely! Our support team is available to assist you with setup, feature customization, and troubleshooting to ensure you get the most out of GydGenWave CRM.</p>
           </motion.div>
         </motion.div>
 
-        <p>If you could not find your favorite questions, kindly send us a mail at</p>
+        <p>If you could not find an answer to your question, feel free to reach out to us via email:</p>
         <a 
-          href="mailto:hello@gydgenwave.co" 
+          href="mailto:support@gydgen.com" 
           className="contact-button"
         >
           hello@gydgenwave.co
