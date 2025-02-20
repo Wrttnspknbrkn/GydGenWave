@@ -10,61 +10,61 @@ const Features = () => {
   
   const features = [
     {
-      icon: "/assets/images/customer-management.svg",
+      icon: "/images/customer-management.svg",
       title: "Customer Management",
       description: "Keep all your customer info in one spot, super easy!",
       link: "/features/customer-management"
     },
     {
-      icon: "/assets/images/lead-management.svg",
+      icon: "/images/lead-management.svg",
       title: "Lead Management", 
       description: "Efficiently manage your leads in one CRM!",
       link: "/features/lead-management"
     },
     {
-      icon: "/assets/images/sales-pipeline.svg",
+      icon: "/images/sales-pipeline.svg",
       title: "Sales Pipeline Management",
       description: "Streamline your sales pipeline to boost conversions!",
       link: "/features/sales-pipeline"
     },
     {
-      icon: "/assets/images/marketing-automation.svg",
+      icon: "/images/marketing-automation.svg",
       title: "Marketing Automation",
       description: "Automate tasks to simplify marketing and track leads!",
       link: "/features/marketing"
     },
     {
-      icon: "/assets/images/task-automation.svg",
+      icon: "/images/task-automation.svg",
       title: "Task & Workflow Automation",
       description: "Boost productivity with CRM automation.",
       link: "/features/automation"
     },
     {
-      icon: "/assets/images/customer-support.svg",
+      icon: "/images/customer-support.svg",
       title: "Customer Support Tools",
       description: "Boost support with CRM tools for faster responses!",
       link: "/features/support"
     },
     {
-      icon: "/assets/images/reports-analytics.svg",
+      icon: "/images/reports-analytics.svg",
       title: "Reports & Analytics",
       description: "Get insights into your business with CRM analytics.",
       link: "/features/analytics"
     },
     {
-      icon: "/assets/images/integration.svg",
+      icon: "/images/integration.svg",
       title: "Integration Capabilities",
       description: "Easily import all your customer info into your CRM!",
       link: "/features/integration"
     },
     {
-      icon: "/assets/images/ai-features.svg",
+      icon: "/images/ai-features.svg",
       title: "AI-Powered Features",
       description: "Use AI in your CRM to enhance customer interactions!",
       link: "/features/ai"
     },
     {
-      icon: "/assets/images/advanced-automation.svg",
+      icon: "/images/advanced-automation.svg",
       title: "Advanced Automation",
       description: "CRM automation enhances tasks and relationships.",
       link: "/features/advanced-automation"

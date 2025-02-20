@@ -32,7 +32,7 @@ const About = () => {
           </div>
           <div className="gw__image">
             <img
-              src="assets\images\gW.png"
+              src="/images/gW.png"
               alt="GydgenWave"
               className="image"
             />
@@ -51,7 +51,7 @@ const About = () => {
           <div className="card">
             <div className="card__image">
               <img
-                src="assets\images\card1.svg"
+                src="/images/card1.svg"
                 alt="feature1"
                 className="image"
               />
@@ -68,7 +68,7 @@ const About = () => {
           <div className="card">
             <div className="card__image">
               <img
-                src="assets\images\card1.svg"
+                src="/images/card1.svg"
                 alt="feature1"
                 className="image"
               />
@@ -87,7 +87,7 @@ const About = () => {
           <div className="card">
             <div className="card__image">
               <img
-                src="assets\images\card1.svg"
+                src="/images/card1.svg"
                 alt="feature1"
                 className="image"
               />
@@ -104,7 +104,7 @@ const About = () => {
           <div className="card">
             <div className="card__image">
               <img
-                src="assets\images\card1.svg"
+                src="/images/card1.svg"
                 alt="feature1"
                 className="image"
               />
@@ -121,7 +121,7 @@ const About = () => {
           <div className="card">
             <div className="card__image">
               <img
-                src="assets\images\card1.svg"
+                src="/images/card1.svg"
                 alt="feature1"
                 className="image"
               />
@@ -138,7 +138,7 @@ const About = () => {
           <div className="card">
             <div className="card__image">
               <img
-                src="assets\images\card1.svg"
+                src="/images/card1.svg"
                 alt="feature1"
                 className="image"
               />
@@ -155,7 +155,7 @@ const About = () => {
           <div className="card">
             <div className="card__image">
               <img
-                src="assets\images\card1.svg"
+                src="/images/card1.svg"
                 alt="feature1"
                 className="image"
               />
@@ -172,7 +172,7 @@ const About = () => {
           <div className="card">
             <div className="card__image">
               <img
-                src="assets\images\card1.svg"
+                src="/images/card1.svg"
                 alt="feature1"
                 className="image"
               />

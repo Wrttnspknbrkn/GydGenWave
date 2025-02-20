@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "/assets/images/company-logo.png";
+import logo from "/images/company-logo.png";
 import { InputField, SelectField } from "../../../components";
 import { MdOutlineMail } from "react-icons/md";
 import { IoIosArrowRoundBack } from "react-icons/io";

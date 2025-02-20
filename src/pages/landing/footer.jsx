@@ -66,7 +66,7 @@ const Footer = () => {
         <div className="message">
           <div className="name flex">
             <div className="logo">
-              <img src="assets\images\company.svg" alt="GydGenWave CRM" />
+              <img src="/images/company.svg" alt="GydGenWave CRM" />
             </div>
           </div>
           <p className="copyright">© {currentYear} GydGenWave CRM. All rights reserved.</p>
@@ -83,16 +83,16 @@ const Footer = () => {
         </div>
         <div className="social flex">
           <a href="" className="media">
-            <img src="assets\images\facebook1.svg" alt="Facebook" />
+            <img src="/images/facebook1.svg" alt="Facebook" />
           </a>
           <a href="" className="media">
-            <img src="assets\images\twitter1.svg" alt="Twitter" />
+            <img src="/images/twitter1.svg" alt="Twitter" />
           </a>
           <a href="" className="media">
-            <img src="assets\images\instagram1.svg" alt="Instagram" />
+            <img src="/images/instagram1.svg" alt="Instagram" />
           </a>
           <a href="" className="media">
-            <img src="assets\images\linkedin1.svg" alt="LinkedIn" />
+            <img src="/images/linkedin1.svg" alt="LinkedIn" />
           </a>
         </div>
       </div>

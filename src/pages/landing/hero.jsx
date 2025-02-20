@@ -8,11 +8,11 @@ const Hero = () => {
         <div className="wave__container flex justify-center">
           <div className="wave">
             <span className="name">
-              <img src="assets\images\fire.png" alt="fire" />
+              <img src="/images/fire.png" alt="fire" />
               GydGenWave
             </span>
             <span>Streamline. Optimize. Grow with GydGen CRM.</span>
-            <img src="assets\images\arrow.png" alt="" />
+            <img src="/images/arrow.png" alt="" />
           </div>
         </div>
         <h1>Empower Your Business with an Intelligent CRM Solution</h1>
@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="dashboard">
-        <img src="assets\images\dash.svg" alt="" />
+        <img src="/images/dash.svg" alt="" />
       </div>
     </div>
   );

@@ -40,19 +40,19 @@ const Faq = () => {
           className="features-container"
         >
           <motion.div variants={itemVariants} className="feature-item">
-            <img src="/assets/images/chart-icon.svg" alt="Chart" className="feature-icon" />
+            <img src="/images/chart-icon.svg" alt="Chart" className="feature-icon" />
             <h3>Choose your Plan</h3>
             <p>Select Your Plan: Boost your business with our CRM! Choose flexible pricing and start your free trial!</p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="feature-item">
-            <img src="/assets/images/graph-icon.svg" alt="Graph" className="feature-icon" />
+            <img src="/images/graph-icon.svg" alt="Graph" className="feature-icon" />
             <h3>Tailor to your Business</h3>
             <p>Tailor your CRM with custom fields and workflows. Automate tasks and set alerts to enhance productivity.</p>
           </motion.div>
 
           <motion.div variants={itemVariants} className="feature-item">
-            <img src="/assets/images/dollar-icon.svg" alt="Dollar" className="feature-icon" />
+            <img src="/images/dollar-icon.svg" alt="Dollar" className="feature-icon" />
             <h3>Launch & Grow</h3>
             <p>Elevate your business with our CRM! Streamline sales and enhance customer interactions.</p>
           </motion.div>
@@ -132,7 +132,7 @@ const Faq = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.9, duration: 0.6 }}
         >
-          <img src="/assets/images/social-icons.png" alt="Social Media Icons" />
+          <img src="/images/social-icons.png" alt="Social Media Icons" />
         </motion.div>
       </motion.section>
     </div>

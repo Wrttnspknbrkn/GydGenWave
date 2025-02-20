@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import InfoSide from "./components/InfoSide";
 import AuthForms from "./components/AuthForms";
-import logo from "/assets/images/company-logo.png";
+import logo from "/images/company-logo.png";
 import email from "./assets/email.png";
 
 const Login = () => {
