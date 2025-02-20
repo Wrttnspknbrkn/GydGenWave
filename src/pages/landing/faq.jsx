@@ -91,19 +91,50 @@ const Faq = () => {
           </motion.div>
         </motion.div>
 
-        <p>If you couldn't find your favorite questions kindly send us a mail at</p>
-        <button>hello@gydgenwave.co</button>
+        <p>If you could not find your favorite questions, kindly send us a mail at</p>
+        <a 
+          href="mailto:hello@gydgenwave.co" 
+          className="contact-button"
+        >
+          hello@gydgenwave.co
+        </a>
       </div>
 
-      <section className="ready-to-ride">
+      {/* Updated Ready to Ride section */}
+      <motion.section 
+        className="ready-to-ride"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
         <div className="ready-to-ride__content">
-          <h2>Ready to Ride the Wave of Business Efficiency?</h2>
+          <motion.h2
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+          >
+            Ready to Ride the Wave of Business Efficiency?
+          </motion.h2>
+          <motion.button 
+            className="ready-to-ride__button"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.7, duration: 0.6 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Get 30days Free trial
+          </motion.button>
         </div>
-        <button className="ready-to-ride__button">Get 30days Free trial</button>
-        <div className="socials">
+        <motion.div 
+          className="socials"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.9, duration: 0.6 }}
+        >
           <img src="/assets/images/social-icons.png" alt="Social Media Icons" />
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
     </div>
   );
 };
