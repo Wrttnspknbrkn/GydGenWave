@@ -1,6 +1,8 @@
 import NavBar from "../landing/navbar";
 import Footer from "../landing/footer";
-import AboutSection from "./AboutSection"; 
+import AboutSection from "./AboutSection";
+import StatsSection from "./StatsSection";
+import MeetOurTeamSection from "./MeetOurTeamSection";
 import "../landing/landing.scss";
 import "./aboutUs.scss";
 
@@ -9,6 +11,8 @@ const AboutUs = () => {
     <div className="about-us-page">
       <NavBar />
       <AboutSection />
+      <StatsSection />
+      <MeetOurTeamSection />
       <Footer />
     </div>
   );
