@@ -365,6 +365,18 @@
       animation: fadeInUp 0.6s ease forwards;
       animation-delay: 0.6s;
       
+      @media (max-width: 768px) {
+        // Keep buttons side by side
+        flex-direction: row;
+        gap: 1rem;
+        
+        .buttons__blue,
+        .buttons__white {
+          flex: 1; // Allow buttons to take equal space
+          min-width: auto; // Allow buttons to shrink if needed
+        }
+      }
+      
       @media (max-width: 640px) {
         flex-direction: column;
         width: 100%;
