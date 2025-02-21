@@ -1,6 +1,6 @@
 import NavBar from "../landing/navbar";
 import Footer from "../landing/footer";
-import AboutSection from "./AboutSection";
+import AboutSection from "./AboutSection"; 
 import "../landing/landing.scss";
 import "./aboutUs.scss";
 
