@@ -7,17 +7,17 @@ const TeamMember = ({ name, role, description, imageSrc }) => {
         <img 
           src={imageSrc} 
           alt={`${name} - ${role}`} 
-          className="w-full h-48 object-cover"
+          className="w-full h-64 object-cover"
         />
-        <span className="absolute top-4 left-4 bg-white text-gray-800 px-3 py-1 text-sm font-medium rounded-full">
+        <span className="absolute top-4 left-4 bg-white text-gray-800 px-3 py-1 text-sm font-medium rounded-md">
           {role}
         </span>
       </div>
       <div className="p-5">
         <div className="flex justify-between items-center mb-3">
           <h3 className="text-xl font-semibold">{name}</h3>
-          <a href="#" className="linkedin-icon">
-            <img src="/images/linkedin.svg" alt="LinkedIn" width={24} height={24} />
+          <a href="#" className="linkedin-icon" aria-label={`LinkedIn profile for ${name}`}>
+            <img src="/images/linkedin.svg" alt="LinkedIn" width={28} height={28} className="linkedin-svg" />
           </a>
         </div>
         <p className="text-gray-600 text-sm">{description}</p>
@@ -67,7 +67,7 @@ const MeetOurTeamSection = () => {
   ];
 
   return (
-    <section className="team-section py-16 bg-[#F8FAFC]">
+    <section className="team-section py-20 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-16">
           Meet Our Team Members
