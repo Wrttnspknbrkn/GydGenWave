@@ -108,16 +108,37 @@
   }
 }
 
+// AboutUs page specific navbar styling
+.about-us-page {
+  .navbar {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+}
+
 // Team Section styles
 .team-section {
   .team-member-card {
     backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
     
-    img {
-      transition: transform 0.5s ease;
+    .team-image-container {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      max-height: 275px;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top; 
+        transition: transform 0.5s ease;
+      }
     }
     
-    &:hover img {
+    &:hover .team-image-container img {
       transform: scale(1.05);
     }
     
