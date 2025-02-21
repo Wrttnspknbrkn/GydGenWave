@@ -254,7 +254,7 @@
     .wave {
       display: flex;
       justify-content: center;
-      gap: 0.5rem; /* reduced gap on smaller screens */
+      gap: 0.5rem;
       align-items: center;
       border: 1px solid rgba(182, 216, 255, 0.6);
       border-radius: 100px;
@@ -281,7 +281,6 @@
         min-width: 0; 
       }
     
-      /* The middle span with the text */
       span:not(.name) {
         flex: 1;
         overflow: hidden;
@@ -314,21 +313,8 @@
         }
       }
     
-      /* The arrow image */
       > img {
         flex-shrink: 0; 
-      }
-    }
-    
-    /* Media query for smaller screens */
-    @media (max-width: 640px) {
-      .wave {
-        gap: 0.25rem; 
-        padding: 0.5rem;
-      }
-      
-      .name {
-        padding: 0.25rem 0.5rem;
       }
     }
     
@@ -364,16 +350,6 @@
       transform: translateY(10px);
       animation: fadeInUp 0.6s ease forwards;
       animation-delay: 0.6s;
-      
-      @media (max-width: 640px) {
-        flex-direction: column;
-        width: 100%;
-        
-        .buttons__blue,
-        .buttons__white {
-          width: 100%;
-        }
-      }
       
       &__blue {
         padding: 0.75rem 2rem;
@@ -431,10 +407,6 @@
     display: flex;
     justify-content: center;
     
-    @media (max-width: 640px) {
-      margin-top: 2rem;
-    }
-    
     img {
       max-width: 100%;
       transition: transform 0.5s ease;
@@ -442,6 +414,55 @@
       &:hover {
         transform: translateY(-5px) scale(1.02);
       }
+    }
+  }
+
+  /* Media Queries */
+  @media (max-width: 768px) {
+    padding: 2rem;
+    
+    .bg-hero {
+      margin: 0 10%;
+      margin-bottom: 4rem; // Increased bottom margin
+      
+      h1 {
+        font-size: 36px;
+        line-height: 44px;
+      }
+      
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    
+    .dashboard {
+      margin-top: 2rem; // Added top margin
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .wave {
+      gap: 0.25rem; 
+      padding: 0.5rem;
+    }
+    
+    .name {
+      padding: 0.25rem 0.5rem;
+    }
+    
+    .buttons {
+      flex-direction: column;
+      width: 100%;
+      
+      .buttons__blue,
+      .buttons__white {
+        width: 100%;
+      }
+    }
+    
+    .dashboard {
+      margin-top: 2rem;
     }
   }
 }
