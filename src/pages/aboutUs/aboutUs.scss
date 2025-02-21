@@ -87,14 +87,15 @@
   }
 }
 
-// Add these to your aboutUs.scss file
-
+// Stats Section styles
 .stats-section {
   .stat-card {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 2rem 1rem;
     
     &:hover {
       transform: translateY(-5px);
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
     }
   }
   
@@ -103,9 +104,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+    line-height: 1.2;
   }
 }
 
+// Team Section styles
 .team-section {
   .team-member-card {
     backface-visibility: hidden;
@@ -119,10 +122,18 @@
     }
     
     .linkedin-icon {
-      transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       
       &:hover {
         opacity: 0.8;
+        transform: scale(1.1);
+      }
+      
+      .linkedin-svg {
+        filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
       }
     }
   }
