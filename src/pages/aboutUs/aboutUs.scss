@@ -29,13 +29,10 @@
   }
 }
 
-// Animation and hover effects for AboutSection
 .about-section {
-  // Use transform for better performance
   transform: translateZ(0);
   backface-visibility: hidden;
   
-  // Fade-in animation on load
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -47,27 +44,24 @@
     }
   }
   
-  // Apply fade-in to content
   .content-left {
     animation: fadeIn 0.8s ease-out forwards;
   }
   
   .content-right {
-    animation: fadeIn 0.8s ease-out 0.2s forwards; // Slight delay for staggered effect
+    animation: fadeIn 0.8s ease-out 0.2s forwards;
   }
   
-  // Floating effect for dashboard image
   .dashboard-image {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0);
-    will-change: transform; // Optimize performance
+    will-change: transform;
     
     &:hover {
       transform: translateY(-8px);
     }
   }
   
-  // Subtle hover effect for text content
   .text-content {
     transition: transform 0.3s ease;
     
@@ -76,7 +70,6 @@
     }
   }
   
-  // Optimize animations for reduced motion preference
   @media (prefers-reduced-motion: reduce) {
     .content-left,
     .content-right {
