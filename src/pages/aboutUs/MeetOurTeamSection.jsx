@@ -3,11 +3,11 @@ import React from 'react';
 const TeamMember = ({ name, role, description, imageSrc }) => {
   return (
     <div className="team-member-card bg-white rounded-lg shadow-sm overflow-hidden transition-transform duration-300 hover:shadow-md hover:-translate-y-1">
-      <div className="relative">
+      <div className="team-image-container">
         <img 
           src={imageSrc} 
           alt={`${name} - ${role}`} 
-          className="w-full h-64 object-cover"
+          className="w-full h-auto object-cover"
         />
         <span className="absolute top-4 left-4 bg-white text-gray-800 px-3 py-1 text-sm font-medium rounded-md">
           {role}
