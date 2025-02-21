@@ -32,37 +32,37 @@ const MeetOurTeamSection = () => {
       name: 'Tom Holland',
       role: 'Manager',
       description: 'The CRM landing page is user-friendly.',
-      imageSrc: '/images/tom-holland.jpg'
+      imageSrc: '/images/person1.png'
     },
     {
       name: 'Scarlett Johansson',
       role: 'Financial Advisor',
       description: 'A financial advisor can enhance your investments with our CRM.',
-      imageSrc: '/images/scarlett-johansson.jpg'
+      imageSrc: '/images/person2.png'
     },
     {
       name: 'Steve Rogers',
       role: 'Tech Lead',
       description: 'The Tech Lead enhances the CRM page\'s user experience.',
-      imageSrc: '/images/steve-rogers.jpg'
+      imageSrc: '/images/person3.png'
     },
     {
       name: 'Chris Evans',
       role: 'Manager',
       description: 'The CRM landing page is easy to use and has a cool design.',
-      imageSrc: '/images/chris-evans.jpg'
+      imageSrc: '/images/person4.png'
     },
     {
       name: 'Sam Wilson',
       role: 'Financial Advisor',
       description: 'A financial advisor helps manage your investments.',
-      imageSrc: '/images/sam-wilson.jpg'
+      imageSrc: '/images/person5.png'
     },
     {
       name: 'Tony Stark',
       role: 'Tech Lead',
       description: 'The Tech Lead manages the team\'s quality and deadlines.',
-      imageSrc: '/images/tony-stark.jpg'
+      imageSrc: '/images/person6.png'
     }
   ];
 
