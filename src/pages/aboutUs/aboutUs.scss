@@ -127,7 +127,7 @@
       position: relative;
       overflow: hidden;
       aspect-ratio: 3/4;
-      max-height: 275px;
+      max-height: 400px; // Increased from 275px
       
       img {
         width: 100%;
@@ -148,6 +148,11 @@
       align-items: center;
       justify-content: center;
       
+      img {
+        width: 36px; // Increased from 28px
+        height: 36px; // Increased from 28px
+      }
+      
       &:hover {
         opacity: 0.8;
         transform: scale(1.1);
@@ -161,7 +166,7 @@
   
   @media (max-width: 640px) {
     .team-member-card {
-      max-width: 350px;
+      max-width: 400px; // Increased from 350px
       margin: 0 auto;
     }
   }
