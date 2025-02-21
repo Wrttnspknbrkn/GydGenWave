@@ -7,17 +7,17 @@ const TeamMember = ({ name, role, description, imageSrc }) => {
         <img 
           src={imageSrc} 
           alt={`${name} - ${role}`} 
-          className="w-full h-auto object-cover"
+          className="w-full h-full object-cover"
         />
         <span className="absolute top-4 left-4 bg-white text-gray-800 px-3 py-1 text-sm font-medium rounded-md">
           {role}
         </span>
       </div>
-      <div className="p-5">
+      <div className="p-6">
         <div className="flex justify-between items-center mb-3">
           <h3 className="text-xl font-semibold">{name}</h3>
           <a href="#" className="linkedin-icon" aria-label={`LinkedIn profile for ${name}`}>
-            <img src="/images/linkedin.svg" alt="LinkedIn" width={28} height={28} className="linkedin-svg" />
+            <img src="/images/linkedin.svg" alt="LinkedIn" width={36} height={36} className="linkedin-svg" />
           </a>
         </div>
         <p className="text-gray-600 text-sm">{description}</p>
