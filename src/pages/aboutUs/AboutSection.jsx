@@ -2,16 +2,16 @@ import React from 'react';
 
 const AboutSection = () => {
   return (
-    <div className="w-full bg-[#F8FAFC] py-16">
+    <div className="w-full bg-[#F8FAFC] py-16 about-section">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 content-left">
             <h1 className="text-3xl md:text-4xl font-semibold text-[#0F172A] leading-tight">
               About Our CRM
             </h1>
             
-            <div className="space-y-6">
+            <div className="space-y-6 text-content">
               <p className="text-[#94A3B8] font-normal text-lg">
                 Our CRM system is designed to simplify customer relationship 
                 management, improve sales performance, and enhance collaboration. 
@@ -29,11 +29,11 @@ const AboutSection = () => {
           </div>
 
           {/* Right Content - Sales Performance Image */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end content-right">
             <img 
               src="/images/sales-performance.png" 
               alt="Sales Performance Dashboard" 
-              className="w-full max-w-md lg:max-w-full object-contain"
+              className="w-full max-w-md lg:max-w-full object-contain dashboard-image"
             />
           </div>
         </div>
