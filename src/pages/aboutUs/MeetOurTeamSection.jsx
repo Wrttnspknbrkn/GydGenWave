@@ -3,7 +3,7 @@ import React from 'react';
 const TeamMember = ({ name, role, description, imageSrc }) => {
   return (
     <div className="w-full bg-white rounded-lg shadow-sm overflow-hidden transition-transform duration-300 hover:shadow-md hover:-translate-y-1">
-      <div className="relative w-full aspect-[3/4]">
+      <div className="relative w-full aspect-[4/5]">
         <img 
           src={imageSrc} 
           alt={`${name} - ${role}`} 
@@ -13,11 +13,11 @@ const TeamMember = ({ name, role, description, imageSrc }) => {
           {role}
         </span>
       </div>
-      <div className="p-6">
-        <div className="flex justify-between items-center mb-3">
+      <div className="p-5">
+        <div className="flex justify-between items-center mb-2">
           <h3 className="text-xl font-semibold">{name}</h3>
           <a href="#" className="flex items-center justify-center transition-all duration-300 hover:opacity-80 hover:scale-110" aria-label={`LinkedIn profile for ${name}`}>
-            <img src="/images/linkedin.svg" alt="LinkedIn" className="w-9 h-9 filter drop-shadow" />
+            <img src="/images/linkedin.svg" alt="LinkedIn" className="w-8 h-8 filter drop-shadow" />
           </a>
         </div>
         <p className="text-gray-600 text-sm">{description}</p>
@@ -67,9 +67,9 @@ const MeetOurTeamSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-[#F8FAFC]">
+    <section className="py-16 bg-[#F8FAFC]">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12">
           Meet Our Team Members
         </h2>
         
