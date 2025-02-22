@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="dashboard">
-        <img src="/images/dash.svg" alt="" />
+        <img src="/images/dash.jpg" alt="" />
       </div>
     </div>
   );
