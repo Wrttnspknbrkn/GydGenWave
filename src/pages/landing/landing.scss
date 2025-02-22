@@ -364,6 +364,15 @@
       transform: translateY(10px);
       animation: fadeInUp 0.6s ease forwards;
       animation-delay: 0.6s;
+
+      &__blue, &__white {
+        padding: 0.75rem 2rem;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 145%;
+        white-space: nowrap; 
+        min-width: fit-content; 
+      }
       
       @media (max-width: 640px) {
         flex-direction: column;
@@ -1446,14 +1455,13 @@ footer {
         font-size: 1rem;
       }
       .buttons {
-        flex-direction: column;
-
-        &__blue {
-          font-size: 0.75rem;
-        }
-        &__white {
-          font-size: 0.75rem;
-          padding: 0.75rem 3rem;
+        flex-direction: row; 
+        justify-content: center;
+        gap: 1rem;
+        &__blue, &__white {
+          font-size: 0.875rem; 
+          padding: 0.75rem 1.5rem; 
+          width: auto; 
         }
       }
     }
@@ -1632,6 +1640,17 @@ footer {
       a {
         font-size: 14px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero .bg-hero .buttons {
+    flex-direction: column;
+    width: 100%;
+    
+    &__blue, &__white {
+      width: 100%;
     }
   }
 }
