@@ -1,17 +1,16 @@
 import React from "react";
-import "./landing.scss";
+import "../../pages/landing/landing.scss";
 
-const Footer = () => {
+const LandingFooter = () => {
   const currentYear = new Date().getFullYear();
-
   return (
     <footer>
       <div className="newsletter">
         <div className="news">
           <h2>Join our newsletter</h2>
           <p>
-            Get the latest CRM insights, success stories, <br /> and product updates from
-            GydGenWave CRM.
+            Get the latest CRM insights, success stories, <br /> and product
+            updates from GydGenWave CRM.
           </p>
         </div>
         <div className="form">
@@ -24,40 +23,78 @@ const Footer = () => {
         <div className="products">
           <h3>Features</h3>
           <ul>
-            <li><a href="">Customer Management</a></li>
-            <li><a href="">Lead Management</a></li>
-            <li><a href="">Sales Pipeline</a></li>
-            <li><a href="">Marketing Automation</a></li>
-            <li><a href="">Analytics & Reporting</a></li>
+            <li>
+              <a href="">Customer Management</a>
+            </li>
+            <li>
+              <a href="">Lead Management</a>
+            </li>
+            <li>
+              <a href="">Sales Pipeline</a>
+            </li>
+            <li>
+              <a href="">Marketing Automation</a>
+            </li>
+            <li>
+              <a href="">Analytics & Reporting</a>
+            </li>
           </ul>
         </div>
         <div className="community">
           <h3>Community</h3>
           <ul>
-            <li><a href="">Success Stories</a></li>
-            <li><a href="">CRM Blog</a></li>
-            <li><a href="">Webinars</a></li>
-            <li><a href="">User Community</a></li>
+            <li>
+              <a href="">Success Stories</a>
+            </li>
+            <li>
+              <a href="">CRM Blog</a>
+            </li>
+            <li>
+              <a href="">Webinars</a>
+            </li>
+            <li>
+              <a href="">User Community</a>
+            </li>
           </ul>
         </div>
         <div className="learn">
           <h3>Resources</h3>
           <ul>
-            <li><a href="">Getting Started Guide</a></li>
-            <li><a href="">Video Tutorials</a></li>
-            <li><a href="">Knowledge Base</a></li>
-            <li><a href="">API Documentation</a></li>
-            <li><a href="">Support Center</a></li>
+            <li>
+              <a href="">Getting Started Guide</a>
+            </li>
+            <li>
+              <a href="">Video Tutorials</a>
+            </li>
+            <li>
+              <a href="">Knowledge Base</a>
+            </li>
+            <li>
+              <a href="">API Documentation</a>
+            </li>
+            <li>
+              <a href="">Support Center</a>
+            </li>
           </ul>
         </div>
         <div className="cases">
           <h3>Solutions</h3>
           <ul>
-            <li><a href="">Small Business CRM</a></li>
-            <li><a href="">Sales Teams</a></li>
-            <li><a href="">Marketing Teams</a></li>
-            <li><a href="">Customer Service</a></li>
-            <li><a href="">Remote Teams</a></li>
+            <li>
+              <a href="">Small Business CRM</a>
+            </li>
+            <li>
+              <a href="">Sales Teams</a>
+            </li>
+            <li>
+              <a href="">Marketing Teams</a>
+            </li>
+            <li>
+              <a href="">Customer Service</a>
+            </li>
+            <li>
+              <a href="">Remote Teams</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -69,7 +106,9 @@ const Footer = () => {
               <img src="/images/company.svg" alt="GydGenWave CRM" />
             </div>
           </div>
-          <p className="copyright">© {currentYear} GydGenWave CRM. All rights reserved.</p>
+          <p className="copyright">
+            © {currentYear} GydGenWave CRM. All rights reserved.
+          </p>
           <div className="address">
             <p>Address: 123 Business Hub, Accra, Ghana</p>
             <p>Phone: +233 123 456 789</p>
@@ -100,4 +139,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default LandingFooter;

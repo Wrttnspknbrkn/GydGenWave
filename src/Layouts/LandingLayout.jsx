@@ -1,12 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { LandingNav } from "../components";
+import { LandingFooter, LandingNav } from "../components";
 
 const LandingLayout = () => {
   return (
     <div>
       <LandingNav />
-      <Outlet/>
+      <Outlet />
+      <LandingFooter />
     </div>
   );
 };

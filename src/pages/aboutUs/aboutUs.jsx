@@ -1,4 +1,3 @@
-import Footer from "../landing/footer";
 import AboutSection from "./AboutSection";
 import StatsSection from "./StatsSection";
 import MeetOurTeamSection from "./MeetOurTeamSection";
@@ -11,7 +10,6 @@ const AboutUs = () => {
       <AboutSection />
       <StatsSection />
       <MeetOurTeamSection />
-      <Footer />
     </div>
   );
 };
