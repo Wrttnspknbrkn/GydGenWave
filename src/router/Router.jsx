@@ -1,7 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { ErrorPage, LandingPage, Register } from "../pages";
-import AboutUs from "../pages/aboutUs/aboutUs";
-import Features from "../pages/features/features";
+import { AboutUs, AdvanceAutom, Ai_powerd, ErrorPage, Features, Integration, LandingPage, Register, RnA } from "../pages";
 import LandingLayout from "../Layouts/LandingLayout";
 
 const Router = [
@@ -13,6 +11,10 @@ const Router = [
       { path: "/landing", element: <LandingPage /> },
       { path: "/about-us", element: <AboutUs /> },
       { path: "/features", element: <Features /> },
+      { path: "/reports-and-analytics", element: <RnA /> },
+      { path: "/intergration", element: <Integration /> },
+      { path: "/ai-powered-features", element: <Ai_powerd /> },
+      { path: "/advanced-automation", element: <AdvanceAutom /> },
     ],
   },
   { path: "/sign-up", element: <Register /> },

@@ -62,12 +62,12 @@ const NavLinks = () => {
           return (
             <li key={item.id} className="relative group">
               {item.children ? (
-                <div
+                <Link
+                  to={item.href}
                   className="relative group cursor-pointer"
                   onMouseEnter={() => handleDropdownEnter(item.id)}
                   onClick={() => {
                     setActive(item.id);
-                    navigate(item.href);
                   }}
                 >
                   <p
@@ -104,7 +104,9 @@ const NavLinks = () => {
                             key={child.id}
                             className={` ${item.column == 4 ? "mb-2" : ""} `}
                             title={child.title}
-                            onClick={() => handleChildClick(item.id)}
+                            onClick={() => {
+                              handleChildClick(item.id);
+                            }}
                           >
                             <Link to={child.href}>
                               <p
@@ -125,7 +127,7 @@ const NavLinks = () => {
                       </ul>
                     </div>
                   )}
-                </div>
+                </Link>
               ) : (
                 <Link to={item.href} onClick={() => setActive(item.id)}>
                   <p
