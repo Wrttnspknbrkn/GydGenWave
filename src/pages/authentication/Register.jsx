@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import InfoSide from "./components/InfoSide";
 import AuthForms from "./components/AuthForms";
 import logo from "/images/company-logo.png";
@@ -6,6 +6,10 @@ import email from "./assets/email.png";
 
 const Login = () => {
   const [activeTab, setActiveTab] = useState(0);
+
+  useEffect(() => {
+    scrollTo(0, 0);
+  }, [activeTab]);
   return (
     <div className="min-h-screen grid grid-cols-12">
       {activeTab != 3 ? (

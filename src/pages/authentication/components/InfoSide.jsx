@@ -25,7 +25,7 @@ const InfoSide = ({ formStep }) => {
     },
   ];
   return (
-    <div className="">
+    <div className="relative">
       {swiperText.map((item, index) => (
         <div key={index}>
           {item.id == formStep && (
@@ -34,7 +34,7 @@ const InfoSide = ({ formStep }) => {
                 <img
                   src={item.img}
                   alt="image"
-                  className="object-cover w-full"
+                  className="object-cover w-full h-[500px]"
                 />
               </div>
               <div className="p-6 mt-8">
@@ -52,7 +52,7 @@ const InfoSide = ({ formStep }) => {
           )}
         </div>
       ))}
-      <div className="grid grid-cols-3 gap-3 p-5">
+      <div className="grid grid-cols-3 gap-3 p-5 absolute bottom-[1.5rem] w-full">
         <div
           className={`h-[5px] rounded-[100px] ${
             formStep == 0 || formStep == 1 || formStep == 2

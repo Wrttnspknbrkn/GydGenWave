@@ -1,11 +1,12 @@
-import { useState } from "react";
-import "./landing.scss";
+import React, { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { useNavigate, useLocation } from "react-router-dom";
+import "../../../pages/landing/landing.scss";
+import NavLinks from "./NavLinks";
 
-const NavBar = () => {
+const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,21 +25,29 @@ const NavBar = () => {
     navigate(path);
     setIsMenuOpen(false);
   };
-
   return (
     <nav className="navbar">
       <div className="name">
-        <img src="/images/company.svg" alt="GydgenWave" onClick={() => handleNavigation("/")} />
+        <img
+          src="/images/company.svg"
+          alt="GydgenWave"
+          onClick={() => handleNavigation("/")}
+        />
       </div>
-      <div className={`auth ${isMenuOpen ? 'hidden' : ''}`}>
+      <div className={`auth ${isMenuOpen ? "hidden" : ""}`}>
+        <div className="hidden lg:block">
+          <NavLinks />
+        </div>
+      </div>
+      <div className={`auth ${isMenuOpen ? "hidden" : ""}`}>
         <div className="login" onClick={() => navigate("/login")}>
           Login
         </div>
         <button onClick={() => navigate("/sign-up")}>Get Started</button>
       </div>
       <div className="menu">
-        <IconButton 
-          color="inherit" 
+        <IconButton
+          color="inherit"
           aria-label="menu"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
@@ -47,25 +56,27 @@ const NavBar = () => {
       </div>
 
       {/* Mobile Navigation Menu */}
-      <div className={`mobile-nav ${isMenuOpen ? 'open' : ''}`}>
+      <div className={`mobile-nav ${isMenuOpen ? "open" : ""}`}>
         <div className="mobile-nav__links">
           {navLinks.map((link) => (
             <div
               key={link.path}
-              className={`mobile-nav__link ${isActive(link.path) ? 'active' : ''}`}
+              className={`mobile-nav__link ${
+                isActive(link.path) ? "active" : ""
+              }`}
               onClick={() => handleNavigation(link.path)}
             >
               {link.name}
             </div>
           ))}
           <div className="mobile-nav__auth">
-            <div 
+            <div
               className="mobile-nav__login"
               onClick={() => handleNavigation("/login")}
             >
               Login
             </div>
-            <button 
+            <button
               className="mobile-nav__button"
               onClick={() => handleNavigation("/sign-up")}
             >
@@ -78,4 +89,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;

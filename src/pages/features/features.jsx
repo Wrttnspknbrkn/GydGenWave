@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import NavBar from "../landing/navbar";
 import Footer from "../landing/footer";
 import { ArrowRight } from 'lucide-react';
 import "../landing/landing.scss";
@@ -75,7 +74,6 @@ const Features = () => {
 
   return (
     <div className="features-page">
-      <NavBar />
       
       <div className="features-container">
         <div className="features-header">

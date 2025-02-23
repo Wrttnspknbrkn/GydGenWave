@@ -11,24 +11,24 @@ const AuthForms = ({ activeTab, setActiveTab }) => {
     <div className="flex justify-center items-center h-full">
       <div className="w-[600px]">
         <img src={logo} alt="logo" className="w-[110px]" />
-        <div className="bg-white p-6 md:p-12 rounded-[14px] mt-8">
+        <div className="bg-white p-6 md:p-8 rounded-[14px] mt-8">
           {activeTab == 0 && (
             <>
-              <h3 className="text-[#101928] text-[28px] font-semibold">
+              <h3 className="text-[#344054] text-[28px] font-semibold">
                 Get Started
               </h3>
             </>
           )}
           {activeTab == 1 && (
             <>
-              <h3 className="text-[#101928] text-[28px] font-semibold">
+              <h3 className="text-[#344054] text-[28px] font-semibold">
                 Business Information
               </h3>
             </>
           )}
           {activeTab == 2 && (
             <>
-              <h3 className="text-[#101928] text-[28px] font-semibold">
+              <h3 className="text-[#344054] text-[28px] font-semibold">
                 Create Password
               </h3>
             </>
@@ -37,7 +37,7 @@ const AuthForms = ({ activeTab, setActiveTab }) => {
             Welcome, kindly provide your information
           </p>
           <>
-            <div className="w-full  mt-12">
+            <div className="w-full  mt-8">
               <ol className="flex items-center w-full justify-center my-4">
                 <li
                   className={`flex w-full justify-between items-center after:content-[''] after:w-full after:h-0.5 after:border-b  after:border-2 after:inline-block relative ${
@@ -109,7 +109,7 @@ const AuthForms = ({ activeTab, setActiveTab }) => {
           </>
           <>
             {activeTab == 0 && (
-              <form action="" className="mt-8 flex flex-col gap-6">
+              <form action="" className="mt-4 flex flex-col gap-6">
                 <InputField
                   label={"First Name"}
                   placeHolder={"Enter First Name"}
@@ -136,7 +136,7 @@ const AuthForms = ({ activeTab, setActiveTab }) => {
                   </p>
                 </div>
                 <button
-                  className="bg-primary text-white py-4 rounded-[8px] font-semibold"
+                  className="bg-primary btn-anim text-white py-3 rounded-[8px] font-semibold"
                   onClick={(e) => {
                     e.preventDefault();
                     setActiveTab(1);
@@ -147,14 +147,14 @@ const AuthForms = ({ activeTab, setActiveTab }) => {
 
                 <p className="text-center text-text_secondary text-[12px]">
                   Already have an account?{" "}
-                  <span className="text-primary text-[14px] font-medium mr-2 cursor-pointer">
+                  <span className="text-primary link text-[14px] font-medium mr-2 cursor-pointer">
                     Login
                   </span>
                 </p>
               </form>
             )}
             {activeTab == 1 && (
-              <form action="" className="mt-8 flex flex-col gap-6">
+              <form action="" className="mt-4 flex flex-col gap-6">
                 <InputField
                   label={"Business Name"}
                   placeHolder={"Enter Business Name"}
@@ -183,7 +183,7 @@ const AuthForms = ({ activeTab, setActiveTab }) => {
                 <InputField label={"Location"} placeHolder={"Enter Location"} />
 
                 <button
-                  className="bg-primary text-white py-4 rounded-[8px] font-semibold"
+                  className="bg-primary btn-anim text-white py-3 rounded-[8px] font-semibold"
                   onClick={(e) => {
                     e.preventDefault();
                     setActiveTab(2);
@@ -193,7 +193,7 @@ const AuthForms = ({ activeTab, setActiveTab }) => {
                 </button>
                 <div className="flex justify-center">
                   <p
-                    className=" w-fit text-primary flex justify-center items-center gap-1 text-[14px] font-medium mr-2 cursor-pointer"
+                    className=" w-fit text-primary flex justify-center items-center gap-1 text-[14px] font-medium mr-2 cursor-pointer hover:gap-3 transition-all ease-in"
                     onClick={() => {
                       setActiveTab(0);
                     }}
@@ -205,7 +205,7 @@ const AuthForms = ({ activeTab, setActiveTab }) => {
               </form>
             )}
             {activeTab == 2 && (
-              <form action="" className="mt-8 flex flex-col gap-6">
+              <form action="" className="mt-4 flex flex-col gap-6">
                 <InputField label={"Password"} placeHolder={"Enter Password"} />
                 <InputField
                   label={"Confirm Password"}
@@ -237,7 +237,7 @@ const AuthForms = ({ activeTab, setActiveTab }) => {
                 </div>
 
                 <button
-                  className="bg-primary text-white py-4 rounded-[8px] font-semibold"
+                  className="bg-primary text-white btn-anim py-3 rounded-[8px] font-semibold"
                   onClick={(e) => {
                     e.preventDefault();
                     setActiveTab(3);
@@ -247,7 +247,7 @@ const AuthForms = ({ activeTab, setActiveTab }) => {
                 </button>
                 <div className="flex justify-center">
                   <p
-                    className=" w-fit text-primary flex justify-center items-center gap-1 text-[14px] font-medium mr-2 cursor-pointer"
+                    className=" w-fit text-primary flex justify-center items-center gap-1 hover:gap-3 transition-all ease-in text-[14px] font-medium mr-2 cursor-pointer"
                     onClick={() => {
                       setActiveTab(1);
                     }}

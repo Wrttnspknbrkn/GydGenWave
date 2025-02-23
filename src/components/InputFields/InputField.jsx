@@ -27,13 +27,13 @@ const InputField = ({
   return (
     <div className="relative flex flex-col gap-1">
       <label
-        className={`left-4 text-[14px] transition-all pointer-events-none`}
+        className={`left-4 text-[14px] transition-all text-[#344054] pointer-events-none`}
         htmlFor={id}
       >
         {label}
       </label>
       <div
-        className={`w-full p-3 border-[2px] flex justify-between items-center rounded-[5.7px] ${
+        className={`w-full px-3 py-2 border-[2px] flex justify-between items-center rounded-[5.7px] ${
           isFocused ? "border-secondary " : "border-[#D0D5DD] "
         }`}
       >
