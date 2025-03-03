@@ -26,13 +26,13 @@ export const Menuitems = [
       {
         id: 4,
         title: "Customer Management",
-        href: "#",
+        href: "/customer-management",
         icon: IoAnalytics,
       },
       {
         id: 5,
         title: "Lead Management",
-        href: "#",
+        href: "/lead-management",
         icon: MdOutlineLeaderboard,
       },
       {
