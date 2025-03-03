@@ -37,10 +37,10 @@ const RnA = () => {
           <h2 className="text-[40px] font-[700] text-text_primary">
             Reports & Analytics
           </h2>
-          <p className="text-[#94A3B8] font-[500] text-[20px]">
+          <p className="text-[#94A3B8] font-[500] text-[20px] mt-4">
             Sales performance and customer insights.
           </p>
-          <div className="mt-4 flex flex-col gap-3">
+          <div className="mt-4 flex flex-col gap-6">
             {listItems.map((item, index) => (
               <div key={index} className="flex gap-2 items-start">
                 <CiCircleCheck className="text-primary text-[24px] font-[700]" />
