@@ -38,26 +38,26 @@ export const Menuitems = [
       {
         id: 6,
         title: "Sales Pipeline Management",
-        href: "#",
+        href: "/sales-pipeline",
         icon: MdOutlineAttachMoney,
       },
       {
         id: 7,
         title: "Marketing Automation",
         icon: RiSpeakAiLine,
-        href: "#",
+        href: "/marketing",
       },
       {
         id: 8,
         title: "Task & Workflow Automation",
         icon: GrTask,
-        href: "#",
+        href: "/task-automation",
       },
       {
         id: 9,
         title: "Customer Support Tools",
         icon: LuUserCog,
-        href: "#",
+        href: "/customer-support",
       },
       {
         id: 10,

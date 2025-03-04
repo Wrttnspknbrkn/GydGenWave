@@ -35,13 +35,13 @@ const Features = () => {
       icon: "/images/task-automation.svg",
       title: "Task & Workflow Automation",
       description: "Boost productivity with CRM automation.",
-      link: "/automation",
+      link: "/task-automation",
     },
     {
       icon: "/images/customer-support.svg",
       title: "Customer Support Tools",
       description: "Boost support with CRM tools for faster responses!",
-      link: "/support",
+      link: "/customer-support",
     },
     {
       icon: "/images/reports-analytics.svg",

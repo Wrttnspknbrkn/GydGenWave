@@ -1,5 +1,5 @@
 import React from "react";
-import { CiCircleCheck } from "react-icons/ci";
+import { CheckCircle } from 'lucide-react';
 import img from "./assets/image5.png";
 import img2 from "./assets/image6.png";
 
@@ -45,7 +45,7 @@ const AdvanceAutom = () => {
           <div className="mt-4 flex flex-col gap-6">
             {listItems.map((item, index) => (
               <div key={index} className="flex gap-2 items-start">
-                <CiCircleCheck className="text-primary text-[24px] font-[700]" />
+                <CheckCircle className="text-primary text-[24px] font-[700]" />
                 <p className="text-[16px] text-text_primary">
                   {item.title}:
                   <span className="text-[#94A3B8] ml-2">{item.desc}</span>
