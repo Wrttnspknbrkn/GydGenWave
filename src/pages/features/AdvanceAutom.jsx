@@ -33,7 +33,7 @@ const AdvanceAutom = () => {
 
   return (
     <div className="px-[4rem] pb-[6rem]">
-      <div className="mt-[4rem] grid grid-cols-2 gap-12">
+      <div className="mt-[4rem] grid lg:grid-cols-2 gap-12">
         <div>
           <h2 className="text-[40px] font-[700] text-text_primary">
             Advanced Automation
@@ -55,15 +55,15 @@ const AdvanceAutom = () => {
           </div>
         </div>
         <div>
-          <img src={img} alt="Image" className="max-h-[430px]" />
+          <img src={img} alt="Image" className="max-h-[430px] w-full object-cover rounded-md" />
         </div>
       </div>
-      <div className="pb-[45rem] pt-8">
+      <div className="pb-[20rem] sm:pb-[22rem] md:pb-[28rem] lg:pb-[35rem] pt-8">
         <div className="absolute w-screen left-0">
           <div className="mt-[6rem] relative">
-            <img src={img2} alt="image" />
-            <div className="absolute centerabs text-white text-center">
-              <h3 className="text-[40px] font-[700] md:whitespace-nowrap">
+            <img src={img2} alt="image" className="min-h-[300px] max-h-[500px] w-full object-cover"/>
+            <div className="absolute centerabs text-white text-center w-full">
+              <h3 className="text-[20px] sm:text-[40px] font-[700] md:whitespace-nowrap px-8">
                 Learn how to optimize your sales process
               </h3>
               <button className="mt-8 bg-white text-black font-[700] px-8 py-3 rounded-[14px] hover:shadow-md transition-all ease-in">

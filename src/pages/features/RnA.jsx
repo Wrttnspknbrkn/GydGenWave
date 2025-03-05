@@ -32,7 +32,7 @@ const RnA = () => {
   ];
   return (
     <div className="px-[4rem] pb-[6rem]">
-      <div className="mt-[4rem] grid grid-cols-2 gap-12">
+      <div className="mt-[4rem] grid lg:grid-cols-2 gap-12">
         <div>
           <h2 className="text-[40px] font-[700] text-text_primary">
             Reports & Analytics
@@ -53,18 +53,18 @@ const RnA = () => {
           </div>
         </div>
         <div>
-          <img src={img} alt="Image" />
+          <img src={img} alt="Image" className="w-full object-cover rounded-md"/>
         </div>
       </div>
       <div className="mt-[6rem] relative">
-        <img src={img2} alt="image" />
-        <div className="absolute centerabs text-white text-center">
-          <h3 className="text-[40px] font-[700]">Ready to boost your sales?</h3>
-          <p className="text-[18px] mt-2">
+        <img src={img2} alt="image" className="min-h-[350px]"/>
+        <div className="absolute centerabs w-full text-white text-center">
+          <h3 className="text-[20px] md:text-[40px] font-[700] px-8">Ready to boost your sales?</h3>
+          <p className="md:text-[18px] mt-2 px-8">
             Join thousands of businesses using CRM to enhance their customer
             relationships.
           </p>
-          <button className="mt-8 bg-white text-primary font-[700] px-8 py-3 rounded-[40px] hover:shadow-md transition-all ease-in">
+          <button className="mt-8 bg-white text-primary font-[700] px-2 sm:px-8 py-3 rounded-[40px] hover:shadow-md transition-all ease-in">
             Start Your Free Trial
           </button>
         </div>

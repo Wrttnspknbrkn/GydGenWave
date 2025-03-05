@@ -64,7 +64,7 @@ const Ai_powerd = () => {
   
   return (
     <div className="px-[4rem] pb-[6rem]">
-      <div className="mt-[4rem] grid grid-cols-2 gap-12">
+      <div className="mt-[4rem] grid lg:grid-cols-2 gap-12">
         <div>
           <h2 className="text-[40px] font-[700] text-text_primary">
             AI-Powered Features
@@ -86,19 +86,19 @@ const Ai_powerd = () => {
           </div>
         </div>
         <div>
-          <img src={img} alt="Image" className="max-h-[380px]" />
+          <img src={img} alt="Image" className="max-h-[380px] w-full object-cover rounded-md" />
         </div>
       </div>
-      <div className="pb-[32rem]">
-        <div className="mt-[6rem] px-[4rem] py-[4rem] bg-gray-100 absolute w-screen left-0">
+      <div className="pb-[78rem] sm:pb-[45rem]  lg:pb-[32rem]">
+        <div className="mt-[6rem] px-8 md:px-[4rem] py-[4rem] bg-gray-100 absolute w-screen left-0">
           <h3 className="text-[40px] font-[700] text-center text-text_primary">
           How AI-Powered Features work?
           </h3>
-          <div className="grid grid-cols-3 mt-10 gap-16">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 justify-center mt-10 gap-16">
             {integrationItems.map((item, index) => (
-              <div key={index}>
+              <div key={index} className="flex flex-col items-center sm:items-start">
                 <p className="text-[35px] mb-4">{item.icon}</p>
-                <h3 className="max-w-[280px] font-normal text-text_primary">
+                <h3 className="max-w-[280px] font-normal text-text_primary text-center sm:text-start">
                   {item.desc}
                 </h3>
               </div>
