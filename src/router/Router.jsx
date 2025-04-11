@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { AboutUs, AdvanceAutom, Ai_powerd, ErrorPage, Features, CustomerManagement, LeadManagement, SalesPipeline, TaskAutomation, CustomerSupport, MarketingAutomation, Integration, LandingPage, Register, RnA } from "../pages";
+import { AboutUs, AdvanceAutom, Ai_powerd, ErrorPage, Features, CustomerManagement, LeadManagement, SalesPipeline, TaskAutomation, CustomerSupport, MarketingAutomation, Integration, LandingPage, Register, RnA, SubscriptionPlan } from "../pages";
 import LandingLayout from "../Layouts/LandingLayout";
 
 const Router = [
@@ -14,6 +14,7 @@ const Router = [
       { path: "/customer-management", element: <CustomerManagement /> },
       { path: "/lead-management", element: <LeadManagement /> },
       { path: "/sales-pipeline", element: <SalesPipeline /> },
+      { path: "/subscription-plan", element: <SubscriptionPlan /> },
       { path: "/task-automation", element: <TaskAutomation /> },
       { path: "/customer-support", element: <CustomerSupport /> },
       { path: "/marketing", element: <MarketingAutomation /> },

@@ -13,6 +13,7 @@ import CustomerSupport from "./features/CustomerSupport";
 import MarketingAutomation from "./features/MarketingAutomation";
 import Features from "./features/features";
 import LandingPage from "./landing/Main";
+import SubscriptionPlan from "./subscription/SubscriptionPlan";
 
 export {
   ErrorPage,
@@ -30,4 +31,5 @@ export {
   Integration,
   Ai_powerd,
   AdvanceAutom,
+  SubscriptionPlan,
 };

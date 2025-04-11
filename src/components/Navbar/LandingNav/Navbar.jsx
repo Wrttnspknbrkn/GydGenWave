@@ -5,6 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import "../../../pages/landing/landing.scss";
 import NavLinks from "./NavLinks";
+import MobileNavLinks from "./MobileNavLinks";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -51,14 +52,18 @@ const Navbar = () => {
           aria-label="menu"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
+          {isMenuOpen ? (
+            <CloseIcon className="fixed top-[1.5rem] right-[1.5rem]" />
+          ) : (
+            <MenuIcon />
+          )}
         </IconButton>
       </div>
 
       {/* Mobile Navigation Menu */}
       <div className={`mobile-nav ${isMenuOpen ? "open" : ""}`}>
         <div className="mobile-nav__links">
-          {navLinks.map((link) => (
+          {/* {navLinks.map((link) => (
             <div
               key={link.path}
               className={`mobile-nav__link ${
@@ -68,7 +73,10 @@ const Navbar = () => {
             >
               {link.name}
             </div>
-          ))}
+          ))} */}
+          <div>
+            <MobileNavLinks setIsMenuOpen={setIsMenuOpen} />
+          </div>
           <div className="mobile-nav__auth">
             <div
               className="mobile-nav__login"
