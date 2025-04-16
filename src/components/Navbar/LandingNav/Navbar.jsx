@@ -5,6 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import "../../../pages/landing/landing.scss";
 import NavLinks from "./NavLinks";
+import MobileNavLinks from "./MobileNavLinks";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -43,7 +44,7 @@ const Navbar = () => {
         <div className="login" onClick={() => navigate("/login")}>
           Login
         </div>
-        <button onClick={() => navigate("/sign-up")}>Get Started</button>
+        <button onClick={() => navigate("/get-started")}>Get Started</button>
       </div>
       <div className="menu">
         <IconButton
@@ -51,14 +52,18 @@ const Navbar = () => {
           aria-label="menu"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
+          {isMenuOpen ? (
+            <CloseIcon className="fixed top-[1.5rem] right-[1.5rem]" />
+          ) : (
+            <MenuIcon />
+          )}
         </IconButton>
       </div>
 
       {/* Mobile Navigation Menu */}
       <div className={`mobile-nav ${isMenuOpen ? "open" : ""}`}>
         <div className="mobile-nav__links">
-          {navLinks.map((link) => (
+          {/* {navLinks.map((link) => (
             <div
               key={link.path}
               className={`mobile-nav__link ${
@@ -68,7 +73,10 @@ const Navbar = () => {
             >
               {link.name}
             </div>
-          ))}
+          ))} */}
+          <div>
+            <MobileNavLinks setIsMenuOpen={setIsMenuOpen} />
+          </div>
           <div className="mobile-nav__auth">
             <div
               className="mobile-nav__login"
@@ -78,7 +86,7 @@ const Navbar = () => {
             </div>
             <button
               className="mobile-nav__button"
-              onClick={() => handleNavigation("/sign-up")}
+              onClick={() => handleNavigation("/get-started")}
             >
               Get Started
             </button>
