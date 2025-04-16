@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="login" onClick={() => navigate("/login")}>
           Login
         </div>
-        <button onClick={() => navigate("/sign-up")}>Get Started</button>
+        <button onClick={() => navigate("/get-started")}>Get Started</button>
       </div>
       <div className="menu">
         <IconButton
@@ -86,7 +86,7 @@ const Navbar = () => {
             </div>
             <button
               className="mobile-nav__button"
-              onClick={() => handleNavigation("/sign-up")}
+              onClick={() => handleNavigation("/get-started")}
             >
               Get Started
             </button>
